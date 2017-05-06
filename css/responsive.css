@@ -4,6 +4,7 @@
 		margin-top:10px
 	}
 }
+
 @media (min-width:768px) and (max-width:991px){
 	#navigation .navbar-nav.navbar-right li{
 		padding:0 0;
@@ -14,15 +15,7 @@
 	.header-bottom .btn-primary{
 		float:right
 	}
-	.about-us .tab-content .pull-left.media-object{
-		float:inherit;
-		width:100%;
-		margin-bottom:15px
-	}
-	.single-member{
-		height:515px;
-		margin-bottom:30px
-	}
+	
 	.efffect h3,.efffect h4{
 		display:none
 	}
@@ -63,8 +56,7 @@
 	.title-one{
 		font-size:24px
 	}
-	#about-us p{
-		font-size:14px
+	
 	}.nav-tabs li{
 		width:33%
 	}
@@ -74,30 +66,16 @@
 	.nav-tabs li a i{
 		display:block
 	}
-	.about-us .tab-content .pull-left.media-object{
-		background-color:#F6F6F6;
-		display:block;float:inherit!important;margin-right:0;
-		width:100%
-	}
-	#services h2{
-		font-size:24px
-	}
-	.member-right{
-		left:55%
-	}
-	.single-member{
-		margin-bottom:25px;
-		height:600px
-	}
-	#portfolio .portfolio-filter{
+	#gallery .gallery-filter{
 		padding:0
 	}
-	#portfolio .portfolio-filter li{
+	#gallery .gallery-filter li{
 		margin-bottom:10px
 	}
 	.efffect h3{
 		margin-top:18%
 	}
+ 
 	#clients-carousel .carousel-inner img{
 		width:100%
 	}
@@ -157,9 +135,6 @@
 	.title-one{
 		font-size:24px
 	}
-	#about-us p{
-		font-size:14px
-	}
 	.nav-tabs li{
 		width:33%
 	}
@@ -186,16 +161,13 @@
 		margin-bottom:25px;
 		height:450px
 	}
-	#portfolio .portfolio-filter li{
+	#gallery .gallery-filter li{
 		margin-bottom:10px
 	}
 	.efffect h3{
 		margin-top:8%
 	}
-	.single-blog ul li{
-		margin-bottom:10px
-	}
-	#gmap iframe{
+		#gmap iframe{
 		height:225px
 	}
 	.contact-address{

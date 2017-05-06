@@ -1,19 +1,16 @@
 jQuery(function($) {'use strict',
 
-	
-	// all Parallax Section
-	$(window).load(function(){'use strict',
-		$("#services").parallax("50%", 0.3);
-		$("#clients").parallax("50%", 0.3);
-	});
-	
 	// gallery filter
+	
+			$(window).load(function(){ $('.gallery-items').hide()});
+//sortiranje prije klika
 	$(window).load(function(){'use strict',
 		$gallery_selectors = $('.gallery-filter >li>a');
+		$('.gallery-filter >li>a').click(function(){$('.gallery-items').show()});
 		if($gallery_selectors!='undefined'){
 			$gallery = $('.gallery-items');
 			$gallery.isotope({
-				itemSelector : '.col-sm-3',
+				itemSelector : '.col-md-1',
 				layoutMode : 'fitRows'
 			});
 			
@@ -26,11 +23,6 @@ jQuery(function($) {'use strict',
 			});
 		}
 	});
-	
-	//Pretty Photo
-	 $("a[data-gallery^='prettyPhoto']").prettyPhoto({
-	  social_tools: false
-	 });
 
 
 	// ContactMe form validation
@@ -50,7 +42,7 @@ jQuery(function($) {'use strict',
 	});
 
 	$('.navbar-collapse ul li a').click(function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 79}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 19}, 1000);
 		return false;
 	});
 
@@ -74,7 +66,6 @@ jQuery(window).load(function(){'use strict';
 
 });
 
-
 // User define function
 function Scroll() {
 	var contentTop      =   [];
@@ -97,14 +88,5 @@ function Scroll() {
 };
 
 
-	// Skill bar Function
-
-	jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},6000);
-	});
-});
-
+	
 

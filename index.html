@@ -3,12 +3,12 @@
 <head> 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="description" content="Creative One Page Parallax Template">
-	<meta name="keywords" content="Creative, Onepage, Parallax, HTML5, Bootstrap, Popular, custom, personal, gallery" /> 
+	<meta name="description" content="Creative One Page Template">
+	<meta name="keywords" content="Creative, Onepage,  HTML5, Bootstrap, Popular, custom, personal, gallery" /> 
 	<meta name="author" content=""> 
 	<title>IPhotography</title> 
+	<link href="css/lightbox.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet"> 
 	<link href="css/font-awesome.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet"> 
@@ -21,19 +21,7 @@
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
-	<div class="preloader">
-		<div class="preloder-wrap">
-			<div class="preloder-inner"> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div>
-			</div>
-		</div>
-	</div><!--/.preloader-->
+	
 	<header id="navigation"> 
 		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
 			<div class="container"> 
@@ -57,7 +45,7 @@
 	</header> <!--/#navigation--> 
 
 	<section id="home">
-		<div class="home-pattern"></div>
+		
 		<div id="main-carousel" class="carousel slide" data-ride="carousel"> 
 			<ol class="carousel-indicators">
 				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -67,15 +55,13 @@
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/slide3.jpg)"> 
 					<div class="carousel-caption"> 
-						<div> 
-							<br><br><br>
+						<div> 							
 							<h2 class="heading">Welcome to IPhotography</h2>
 							</div> 
 					</div> 
 				</div>
 				<div class="item" style="background-image: url(images/slider/slide2.jpg)"> 
-					<div class="carousel-caption"> <div> 
-						<br><br><br><br><br><br>
+					<div class="carousel-caption"> <div> 						
 						<h2 class="heading">See my gallery</h2> 
 						<p>More than 100 pictures in three categories </p>  
 					</div> 
@@ -85,14 +71,12 @@
 				<div class="carousel-caption"> 
 					<div> 
 						<br><br><br>
-						<h2 class="heading"></h2>
-						<br> <br> <br> <br> <br> <br> 
+						<h2 class="heading"></h2>						
 						<p>Feel free to contact me! Enjoy!</p> 
 				</div> 
 				</div> 
 			</div>
 		</div><!--/.carousel-inner-->
-
 		<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 	</div> 
@@ -100,23 +84,16 @@
 </section>  <!--/#home-->
 
 <section id="about-me">
-	<div class="container">
-			<div class="container">
-		<table style="border: 1px solid transparent">
-			<tr>
-  			<th rowspan="2"><img class="img-circle" src="images/me.jpg" width="254" height="236"></th>
-  			<th><h2 class="title-one1">	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;About me</h2></th>
-			</tr>
-			<tr>
- 			 <td class="text-center"><p>Hello! My name is Iva and I am a student at Faculty of Electrical Engineering, Computer Science and Information Technology Osijek. 
-				  I was born in Osijek in 1994. I am far far away from calling myself a photographer, but as you can see, I like to take photos with my phone. Wherever I go I try to capture great shots. Here you can see different photos in three
-				  categories, nature, arhitecture and people. In the future, I am planning to buy a low budger proffesional camera (recommendations are more than welcome).
-				</p></td>
-			</tr>
-		</table>
-	</div>
-	</div>
-		</section><!--/#about-me-->
+	 <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5"><img class="img-circle img-responsive center-block" src="images/me.jpg" width="250" height="250" alt="Me" ></div>
+            <div class="col-md-6"><h2 class="title-one1 text-center ">About me</h2><p class="text-center">Hello! My name is Iva and I am a student at Faculty of Electrical Engineering, Computer Science and Information Technology Osijek. 
+				  I was born in Osijek in 1994. I am far, far away from calling myself a photographer (and programmer as well), but as you can see, I enjoy taking photos. Wherever I go I try to capture great shots with my phone. Here you can see different photos in three
+				  categories, nature, architecture and other. In the future, I am planning to buy a low budger proffesional camera (recommendations are more than welcome) and spend more time learning about photography.
+				</p></div>
+        </div>
+    </div>   
+	 	 		</section><!--/#about-me-->
 
 	
 		<section id="gallery">
@@ -127,177 +104,575 @@
 						</div>
 				</div>
 				<ul class="gallery-filter text-center">
-					<li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".nature">Nature</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".architecute">Architecute</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".people">People</a></li>
+					
+					<li><a class="btn btn-default " data-filter=".nature">Nature</a></li>
+					<li><a class="btn btn-default"  data-filter=".architecture">architecture</a></li>
+					<li><a class="btn btn-default"  data-filter=".other">Other</a></li>
 					
 				</ul><!--/#gallery-filter-->
-				<div class="gallery-items">
-					<div class="col-sm-3 col-xs-12 gallery-item nature">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/nature/1.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
+			
+				<div class="gallery-items">	
+					    	            <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N1.jpg" data-lightbox="nature"><img  src="images/gallery/nature/N1.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N2.jpg" data-lightbox="nature"><img src="images/gallery/nature/N2.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N3.jpg" data-lightbox="nature"><img src="images/gallery/nature/N3.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N4.jpg" data-lightbox="nature"><img src="images/gallery/nature/N4.jpg" alt=""></a>
+							</div>
+						</div>			
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N5.jpg" data-lightbox="nature"><img src="images/gallery/nature/N5.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N6.jpg" data-lightbox="nature"><img src="images/gallery/nature/N6.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N7.jpg" data-lightbox="nature"><img src="images/gallery/nature/N7.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N8.jpg" data-lightbox="nature"><img src="images/gallery/nature/N8.jpg" alt=""></a>
+							</div>
+						</div>		
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N9.jpg" data-lightbox="nature"><img src="images/gallery/nature/N9.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N10.jpg" data-lightbox="nature"><img src="images/gallery/nature/N10.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N11.jpg" data-lightbox="nature"><img src="images/gallery/nature/N11.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N12.jpg" data-lightbox="nature"><img src="images/gallery/nature/N12.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N13.jpg" data-lightbox="nature"><img src="images/gallery/nature/N13.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N14.jpg" data-lightbox="nature"><img src="images/gallery/nature/N14.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N15.jpg" data-lightbox="nature"><img src="images/gallery/nature/N15.jpg" alt=""></a>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 gallery-item arhitecture">
-							<div class="view efffect" >
-								<div class="gallery-image">
-									<img src="images/gallery/architecture/2.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/gallery/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N16.jpg" data-lightbox="nature"><img src="images/gallery/nature/N16.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N17.jpg" data-lightbox="nature"><img src="images/gallery/nature/N17.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N18.jpg" data-lightbox="nature"><img src="images/gallery/nature/N18.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N19.jpg" data-lightbox="nature"><img src="images/gallery/nature/N19.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N20.jpg" data-lightbox="nature"><img src="images/gallery/nature/N20.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N21.jpg" data-lightbox="nature"><img src="images/gallery/nature/N21.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N22.jpg" data-lightbox="nature"><img src="images/gallery/nature/N22.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N23.jpg" data-lightbox="nature"><img src="images/gallery/nature/N23.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N24.jpg" data-lightbox="nature"><img src="images/gallery/nature/N24.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N25.jpg" data-lightbox="nature"><img src="images/gallery/nature/N25.jpg" alt=""></a>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 gallery-item arhitecture">
-							<div class="view efffect" >
-								<div class="gallery-image">
-									<img src="images/gallery/architecture/5.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/gallery/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N26.jpg" data-lightbox="nature"><img src="images/gallery/nature/N26.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N27.jpg" data-lightbox="nature"><img src="images/gallery/nature/N27.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N28.jpg" data-lightbox="nature"><img src="images/gallery/nature/N28.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N29.jpg" data-lightbox="nature"><img src="images/gallery/nature/N29.jpg" alt=""></a>
+							</div>
+						</div>	
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N30.jpg" data-lightbox="nature"><img src="images/gallery/nature/N30.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N31.jpg" data-lightbox="nature"><img src="images/gallery/nature/N31.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N32.jpg" data-lightbox="nature"><img src="images/gallery/nature/N32.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N33.jpg" data-lightbox="nature"><img src="images/gallery/nature/N33.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N34.jpg" data-lightbox="nature"><img src="images/gallery/nature/N34.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N35.jpg" data-lightbox="nature"><img src="images/gallery/nature/N35.jpg" alt=""></a>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 gallery-item architecute">
-							<div class="view efffect">
-								<div class="gallery-image">
-									<img src="images/gallery/architecture/3.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N36.jpg" data-lightbox="nature"><img src="images/gallery/nature/N36.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N37.jpg" data-lightbox="nature"><img src="images/gallery/nature/N37.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N38.jpg" data-lightbox="nature"><img src="images/gallery/nature/N38.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N39.jpg" data-lightbox="nature"><img src="images/gallery/nature/N39.jpg" alt=""></a>
+							</div>
+						</div>		
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N40.jpg" data-lightbox="nature"><img src="images/gallery/nature/N40.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N41.jpg" data-lightbox="nature"><img src="images/gallery/nature/N41.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N42.jpg" data-lightbox="nature"><img src="images/gallery/nature/N42.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N43.jpg" data-lightbox="nature"><img src="images/gallery/nature/N43.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N44.jpg" data-lightbox="nature"><img src="images/gallery/nature/N44.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N45.jpg" data-lightbox="nature"><img src="images/gallery/nature/N45.jpg" alt=""></a>
 							</div>
 						</div>
-					</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N46.jpg" data-lightbox="nature"><img src="images/gallery/nature/N46.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N47.jpg" data-lightbox="nature"><img src="images/gallery/nature/N47.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N48.jpg" data-lightbox="nature"><img src="images/gallery/nature/N48.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N49.jpg" data-lightbox="nature"><img src="images/gallery/nature/N49.jpg" alt=""></a>
+							</div>
+						</div>	
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item nature">
+						<div class="view ">							
+							<a href="images/gallery/nature/N50.jpg" data-lightbox="nature"><img src="images/gallery/nature/N50.jpg" alt=""></a>
+							</div>
+						</div>		
+                           	            <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A1.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A1.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A2.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A2.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A3.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A3.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A4.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A4.jpg" alt=""></a>
+							</div>
+						</div>			
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A5.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A5.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A6.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A6.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A7.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A7.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A8.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A8.jpg" alt=""></a>
+							</div>
+						</div>		
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A9.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A9.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A10.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A10.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A11.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A11.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A12.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A12.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A13.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A13.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A14.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A14.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A15.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A15.jpg" alt=""></a>
+							</div>
+						</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A16.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A16.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A17.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A17.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A18.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A18.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A19.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A19.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A20.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A20.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A21.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A21.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A22.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A22.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A23.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A23.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A24.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A24.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A25.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A25.jpg" alt=""></a>
+							</div>
+						</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A26.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A26.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A27.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A27.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A28.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A28.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A29.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A29.jpg" alt=""></a>
+							</div>
+						</div>	
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A30.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A30.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A31.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A31.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A32.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A32.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A33.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A33.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A34.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A34.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A35.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A35.jpg" alt=""></a>
+							</div>
+						</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A36.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A36.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A37.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A37.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A38.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A38.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A39.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A39.jpg" alt=""></a>
+							</div>
+						</div>		
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A40.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A40.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A41.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A41.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A42.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A42.jpg" alt=""></a>
+							</div>
+						</div>	
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A43.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A43.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A44.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A44.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A45.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A45.jpg" alt=""></a>
+							</div>
+						</div>
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A46.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A46.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A47.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A47.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A48.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A48.jpg" alt=""></a>
+							</div>
+						</div>		
+                          <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A49.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A49.jpg" alt=""></a>
+							</div>
+						</div>	
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A50.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A50.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A51.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A51.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item architecture">
+						<div class="view ">							
+							<a href="images/gallery/architecture/A52.jpg" data-lightbox="architecture"><img src="images/gallery/architecture/A52.jpg" alt=""></a>
+							</div>
+						</div>	
+                      <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P1.jpg" data-lightbox="other"><img src="images/gallery/other/P1.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P2.jpg" data-lightbox="other"><img src="images/gallery/other/P2.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P3.jpg" data-lightbox="other"><img src="images/gallery/other/P3.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P4.jpg" data-lightbox="other"><img src="images/gallery/other/P4.jpg" alt=""></a>
+							</div>
+						</div>			
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P5.jpg" data-lightbox="other"><img src="images/gallery/other/P5.jpg" alt=""></a>
+							</div>
+						</div>				
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P6.jpg" data-lightbox="other"><img src="images/gallery/other/P6.jpg" alt=""></a>
+							</div>
+						</div>		
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P7.jpg" data-lightbox="other"><img src="images/gallery/other/P7.jpg" alt=""></a>
+							</div>
+						</div>						
+                        <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P8.jpg" data-lightbox="other"><img src="images/gallery/other/P8.jpg" alt=""></a>
+							</div>
+						</div>		
+                         <div class="col-md-1 col-sm-3 col-xs-4 gallery-item other">
+						<div class="view ">							
+							<a href="images/gallery/other/P9.jpg" data-lightbox="other"><img src="images/gallery/other/P9.jpg" alt=""></a>
+							</div>
+						</div>												
 					
-					<div class="col-sm-3 col-xs-12 gallery-item nature">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/nature/2.jpg" alt="">
-							</div> <div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 gallery-item architecute">
-					<div class="view efffect">
-						<div class="gallery-image">
-							<img src="images/gallery/architecture/6.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 gallery-item nature">
-					<div class="view efffect">
-						<div class="gallery-image">
-							<img src="images/gallery/nature/3.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 gallery-item arhitecture">
-					<div class="view efffect">
-						<div class="gallery-image">
-							<img src="images/gallery/architecture/10.jpg" alt=""></div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 gallery-item nature">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/nature/4.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 gallery-item people">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/people/kata1.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Katarina Vinkovic</h3>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/gallery/people/kata1.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-							<div class="col-sm-3 col-xs-12 gallery-item nature">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/nature/5.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="images/gallery/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-						<div class="col-sm-3 col-xs-12 gallery-item people">
-						<div class="view efffect">
-							<div class="gallery-image">
-								<img src="images/gallery/people/kata2.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Katarina Vinkovic</h3>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="images/gallery/people/kata2.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 gallery-item architecture">
-							<div class="view efffect">
-								<div class="gallery-image">
-									<img src="images/gallery/architecture/9.jpg" alt=""></div> 
-									<div class="mask text-center">
-										<h3>Novel</h3>
-										<h4>Lorem ipsum dolor sit amet consectetur</h4>
-										<a href="#"><i class="fa fa-link"></i></a>
-										<a href="images/gallery/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-									</div>
-								</div>
-							</div>
+						
 
-							
+						</div>
+				
+				</div>				
 						
 
 					</section> <!--/#gallery-->
@@ -361,13 +736,9 @@
 	
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script> 
 	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
 	<script type="text/javascript" src="js/main.js"></script> 
+	<script src="js/lightbox-plus-jquery.js"></script>
 	
-	
-
 </body>
 </html>
