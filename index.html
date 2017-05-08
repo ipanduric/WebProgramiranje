@@ -12,13 +12,14 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet"> 
-	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+		<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
 	<script src="js/respond.min.js"></script> <![endif]--> 
 	<link rel="shortcut icon" href="images/ico/favicon.png"> 
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"> 
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"> 
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"> 
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
 </head><!--/head-->
 <body>
 	
@@ -666,54 +667,37 @@
 						<div class="view ">							
 							<a href="images/gallery/other/P9.jpg" data-lightbox="other"><img src="images/gallery/other/P9.jpg" alt=""></a>
 							</div>
-						</div>												
-					
-						
-
-						</div>
+						</div>							
+					</div>
 				
-				</div>				
-						
+				</div>		
+				
 
-					</section> <!--/#gallery-->
-
-					
-					<section id="instagram"> 
-						<div class="container">
-									<h2 class="title-one">Instagram</h2>
-									<p>https://www.codeofaninja.com/2015/01/display-instagram-feed-website.html
-										https://webdesign.tutsplus.com/tutorials/building-an-instagram-based-portfolio-with-bootstrap--cms-22243</p>
-								</div>
-							</div> 
-							
-						</section> <!--/#instagram-->
-
+								</section> <!--/#gallery-->
+			<section class="no-padding" id="instagram">
+				<h2 class="title-one">Instagram</h2>
+				<div class="container">			
+				
+					<div class="wrapper">
+  					<div id="instafeed"></div>
+					</div>								
+					</div>
+									
+			</section>
+								
 						<section id="ContactMe">
 							<div class="container">
 								<div class="row text-center clearfix">
 									<div class="col-sm-8 col-sm-offset-2">
 										<div class="ContactMe-heading">
 											<h2 class="title-one">Contact me</h2>
-											</div>
-									</div>
-								</div>
-							</div>
-							<div class="container">
-								<div class="ContactMe-details">
-									<div class="pattern"></div>
-									<div class="row text-center clearfix">
-										<div class="col-sm-6">
-											<div class="ContactMe-address"><address><p><span>I</span>va<span>P</span>andurić</p><strong>J.J. Strossmayera 75a<br>Marijanci, Hrvatska</strong></address>
-												<div class="social-icons">
-													<a href="https://www.instagram.com/_iphotography___/"><i class="fa fa-instagram"></i></a>
-													
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6"> 
-											<div id="ContactMe-form-section">
+  							</div>
+		</div>
+	</div>  
+		<div class="col-sm-12"> 
+											<div id="contact-form-section">
 												<div class="status alert alert-success" style="display: none"></div>
-												<form id="ContactMe-form" class="ContactMe" name="ContactMe-form" method="post" action="send-mail.php">
+												<form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
 													<div class="form-group">
 														<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name"></div>
 														<div class="form-group">
@@ -728,17 +712,31 @@
 													</form> 
 												</div>
 											</div>
-										</div>
-									</div>
-								</div> 
-							</section> <!--/#ContactMe--> 
+							</section> 
+
+							<footer id="footer"> 
+		<div class="container"> 
+			<div class="text-center social-icons"> 
+				<p>Iva Pandurić - IPhotography </p> 
+					<div class="social-icons">
+				<a href="https://www.instagram.com/_iphotography___/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/iva.panduric/"><i class="fa fa-facebook"></i></a>
+				
+			</div> 
+		</div> 
+	</footer>
 
 	
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script> 
-	<script src="js/lightbox-plus-jquery.js"></script>
+	<script src="js/lightbox-plus-jquery.js"></script>	
+	<script type="text/javascript" src="js/instafeed.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+																	
+     
 	
 </body>
+
 </html>

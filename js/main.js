@@ -23,7 +23,23 @@ jQuery(function($) {'use strict',
 			});
 		}
 	});
+							
+		//instagram
+		
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '4973405042',
+    clientId: 'd1f4bac4932c48c7bf2113aa2b47cada',
+    accessToken: '4973405042.d1f4bac.13c8c67c807246b095d696de2fd1ac42',
+template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
+    resolution: 'low_resolution',
+    sortBy: 'most-liked',
+    limit: 100,
+    links: false
+  });
+  userFeed.run();
 
+											
 
 	// ContactMe form validation
 	var form = $('.ContactMe-form');

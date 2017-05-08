@@ -79,9 +79,7 @@
 	#clients-carousel .carousel-inner img{
 		width:100%
 	}
-	.single-blog ul li{
-		margin-bottom:10px
-	}
+	
 	#gmap iframe{
 		height:225px
 	}
@@ -151,16 +149,7 @@
 		margin-right:0;
 		width:100%
 	}
-	#services h2{
-		font-size:24px
-	}
-	.member-right{
-		left:55%
-	}
-	.single-member{
-		margin-bottom:25px;
-		height:450px
-	}
+	
 	#gallery .gallery-filter li{
 		margin-bottom:10px
 	}

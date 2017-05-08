@@ -14,8 +14,8 @@ $message=$_POST['message'];
     $body .= "Website: " . $website . "\n"; 
     $body .= "Message: " . $message . "\n"; 
 
-    //replace with your email
-    mail("test@email.com","New email",$body); 
+    
+    mail("ipicturology@gmail.com","IPhotography",$body); 
 
   
 ?>

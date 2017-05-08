@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 #about-me {
 	background:#000;
 	overflow: hidden;
-	padding: 30px 0 ;
+	padding: 70px 0 ;
 }
 
 #about-me h2 {
@@ -420,6 +420,62 @@ h1, h2, h3, h4, h5, h6 {
 /*=====================
 ======Our instagram CSS=====
 ======================*/
+.wrapper {
+  margin: 0px auto;
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+#instafeed a {
+  margin: 3px;
+  padding: 0;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid skyblue;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  transition: 0.65s;
+}
+#instafeed a:hover {
+  border: 2px solid #fff;
+  transition: 0.65s;
+}
+#instafeed img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#instafeed .likes {
+  background:skyblue;
+  font-family:Roboto;
+  font-size:2em;
+  position:absolute;
+  color:#fff;
+  padding: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  line-height: 100px;
+  border-radius: 50%;
+  transition: 0.65s;
+}
+
+#instafeed a:hover .likes {
+  opacity:1;
+  border-radius: 50%;
+}
+
+#instafeed a:nth-of-type(2n) {
+  border: 5px solid lightblue;
+}
+#instafeed a:nth-of-type(2n) .likes {
+  background:rgba(3,155,299,0.8);  
+}
 
 #instagram {
 	padding-bottom:75px;
@@ -433,6 +489,20 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 15px;
 }
 
+#footer {
+	background-color:#f6f6f6;
+	padding:25px 0;
+	color:#43484E;
+	font-size:16px;
+	position:relative;
+	margin-top:1px;
+}
+
+
+
+
+
+
 
 
 /*====================
@@ -441,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #ContactMe {
 	overflow:hidden;
-	background-color: #f6f6f6;
+	background-color: #000;
 	position:relative;
 	padding-bottom:85px;
 	border-top:2px solid #ddd
@@ -469,66 +539,9 @@ h1, h2, h3, h4, h5, h6 {
 	opacity:0.2;
 }
 
-
-.ContactMe-address {
-	background-color: #fff;
-	height:390px;
-	padding-top:85px
-}
-
-.ContactMe-address .social-icons a i {
-	border-radius:0;
-	height:30px;
-	line-height:inherit;
-	width:30px;
-	border-width:0;
-	transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;
-	margin-right:10px
-}
-.ContactMe-address .social-icons i:hover {
-	transform: scale(.9);
-}
-
-.social-icons a {
-	color: #A2A2A2;
-	font-size: 20px;
-	border: 1px solid #A2A2A2;
-	border-radius: 50%;
-	text-align: center;
-	padding: 6px;
-	width: 44px;
-	height: 44px;
-	display: inline-block;
-	margin: 2px;
-}
-
-
-.social-icons a:hover {
-  color: #81BEF7;
-  border: 1px solid #81BEF7;
-}
-
-.ContactMe-address .social-icons, 
-.ContactMe-address address {
-	z-index:2;
-	position:relative
-}
-
-.ContactMe-address  p {
-	font-weight:800;
-	font-size:24px
-}
-
-.ContactMe-address  p span {
-	color: #81BEF7;
-	
-}
-
 #ContactMe-form-section {	
 	padding:35px;
-	background-color: #FFF; 
+	background-color: #fff; 
 	height:390px;
 }
 #ContactMe-form-section .btn-primary {
@@ -584,6 +597,30 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-box-shadow:none;
 	box-shadow:none;
 }
+
+/*footer*/
+
+#footer {
+	background-color:#000;
+	padding:25px 0;
+	color:skyblue;
+	font-size:20px;
+	position:relative;
+	margin-top:1px;
+}
+#footer .social-icons a {
+	color: skyblue;
+	font-size: 15px;
+	border: 1px solid #A2A2A2;
+	border-radius: 50%;
+	text-align: center;
+	padding: 6px;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin: 2px;
+}
+
 
 
 /*============================
