@@ -500,11 +500,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
-
-
 /*====================
 ======ContactMe CSS=====
 ======================*/
@@ -544,28 +539,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #fff; 
 	height:390px;
 }
-#ContactMe-form-section .btn-primary {
-	background-color:#81BEF7;
-	border-color:#f6f6f6;
-	border-radius:0;
-	padding:10px 35px;
-	text-transform:uppercase;
-	font-weight:800;
-	transition: all 0.9s ease 0s;
-  -moz-transition: all 0.9s ease 0s;
-  -webkit-transition: all 0.9s ease 0s;
- }
 
-#ContactMe-form-section .btn-primary:hover {
-	background-color:#43484E
-}
 
 #ContactMe-form input, 
 #ContactMe-form textarea, 
-#ContactMe-form .btn-primary  {
-	position:relative;
-	z-index:2;
-}
+
 
 #ContactMe-form .name-field, 
 #ContactMe-form .mail-field  {
@@ -577,9 +555,6 @@ h1, h2, h3, h4, h5, h6 {
 	float:left
 }
 
-#ContactMe-form .mail-field {
-	
-}
 
 #ContactMe-form-section .form-control {
 	border-radius:0;
