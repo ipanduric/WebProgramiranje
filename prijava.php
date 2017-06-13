@@ -24,13 +24,13 @@
    
    $password = hash('sha256', $lozinka); // password hashing using SHA256
   
-   $res=mysqli_query($conn, "SELECT ID, kor_ime, lozinka FROM users WHERE lozinka='$lozinka'");
+   $res=mysqli_query($conn, "SELECT ID, ime, korime, lozinka FROM korisnici WHERE lozinka='$lozinka'");
    $row=mysqli_fetch_array($res);
    $count = mysqli_num_rows($res); // if uname/pass correct it returns must be 1 row
    
    if( $count == 1 && $row['lozinka']==$lozinka ) {
-    $_SESSION['user'] = $row['ID'];
-    header("Location: index.html");
+    $_SESSION['user'] = $row['ime'];
+    header("Location: contactme.php");
    } else {
     $errMSG = "Incorrect credentials, please try again...";
    }

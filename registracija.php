@@ -7,9 +7,9 @@
 
  if ( isset($_POST['btn-signup']) ) {
   
-  $name = trim($_POST['ime']);
-  $name = strip_tags($name);
-  $name = htmlspecialchars($name);
+  $ime = trim($_POST['ime']);
+  $ime = strip_tags($ime);
+  $ime = htmlspecialchars($ime);
   
   $prezime = trim($_POST['prezime']);
   $prezime = strip_tags($prezime);
@@ -27,14 +27,13 @@
   $lozinka = strip_tags($lozinka);
   $lozinka = htmlspecialchars($lozinka);
   
-
   // password encrypt using SHA256();
   $password = hash('sha256', $lozinka);
   
   // if there's no error, continue to signup
   if( !$error ) {
    
-   $query = "INSERT INTO users(ime,prezime,email,kor_ime,lozinka) VALUES('$ime','$prezime','$email','$kor_ime','$lozinka')";
+   $query = "INSERT INTO korisnici(ime,prezime,email,korime,lozinka) VALUES('$ime','$prezime','$email','$kor_ime','$lozinka')";
    $res = mysqli_query($conn,$query);
     
    if ($res) {
@@ -43,9 +42,9 @@
     unset($ime);
 	unset($prezime);
 	unset($kor_ime);
-	unset($email);
+    unset($email);
     unset($lozinka);
-       } else {
+   } else {
     $errTyp = "danger";
     $errMSG = "Something went wrong, try again later..."; 
    } 
@@ -91,7 +90,7 @@
 
 <div class="container">
 
- <div>
+ <div id="login-form">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
     
      <div>
